@@ -5,7 +5,6 @@ from turtlesim.msg import Pose as turtlesim_pose
 
 
 def poseCallback(pose_message):
-
 	rospy.loginfo("Position (x, y, theta): ({}, {}, {})".format(pose_message.x, pose_message.y, pose_message.theta))
 
 def turtle_pose_info():
