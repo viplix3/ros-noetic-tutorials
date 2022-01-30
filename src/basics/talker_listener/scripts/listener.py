@@ -7,7 +7,7 @@ def listener_classback(message):
 		This is the function caleed by Subscriber (listener) node whenever it reads \
 		a message from a relevant topic
 	"""
-	rospy.loginfo(rospy.get_caller_id() + "Listener heard %s" % message)
+	rospy.loginfo(rospy.get_caller_id() + "[LISTENER_PYTHON] heard data %s" % message)
 
 def listener():
 	"""
