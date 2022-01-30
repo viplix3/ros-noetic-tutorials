@@ -14,7 +14,7 @@ def listener():
 		Created a Subscriber (listener) rosnode
 	"""
 	# Initializing the node, the anonymous flag makes sure a unique node is created
-	# even if multiple nodes are swapned
+	# even if multiple nodes are spawned
 	rospy.init_node(name='python_listener', anonymous=True)
 	rospy.Subscriber(name='chat_messages', data_class=String, callback=listener_classback)
 

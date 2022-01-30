@@ -11,7 +11,7 @@ def talker():
 	publisher = rospy.Publisher(name='chat_messages', data_class=String, queue_size=20)
 
 	# Initializing the node, the anonymous flag makes sure a unique node is created
-	# even if multiple nodes are swapned
+	# even if multiple nodes are spawned
 	rospy.init_node(name='python_talker', anonymous=True)
 	rate = rospy.Rate(hz=1) # Publish speed for messages by the node to the topic
 
@@ -27,5 +27,5 @@ def talker():
 if __name__ == '__main__':
 	try:
 		talker()
-	except rospy.ROSInterruptException:
+	except ROSInterruptException:
 		pass
